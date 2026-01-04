@@ -1,18 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import './index.css'
 import App from './App.jsx'
-
-function Myreactapp() {
-  return (
-    <div>
-      <h1>This is checker for react app of my first site</h1>
-    </div>
-  )
-}
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
-    <Myreactapp />
   </StrictMode>,
 )
