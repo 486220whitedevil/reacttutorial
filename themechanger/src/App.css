@@ -1,0 +1,38 @@
+
+
+.colorbox{
+    position: absolute;
+    background-color: rgb(48, 45, 45);
+    width: 70%;
+    height: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 10px;
+    right: 15%
+
+}
+
+.changecolor{
+    margin-left: 20px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.red{
+    background-color: red;
+}
+
+.black{
+    background-color: black;
+    color: white;
+}
+
+.blue{
+    background-color: blue;
+}
+.white{
+    background-color: white;
+    color: black;
+}
