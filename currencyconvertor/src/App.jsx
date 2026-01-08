@@ -8,6 +8,7 @@ function App() {
   const [toCurrency, setTocurrency] = useState("inr");
 
   const currencyInfo = useCurrencyInfo(fromCurrency);
+  console.log(currencyInfo)
   const convertedAmount = amount * (currencyInfo[toCurrency] || 0);
 
   const swap = () => {
