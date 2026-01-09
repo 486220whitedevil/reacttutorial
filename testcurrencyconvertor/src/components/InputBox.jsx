@@ -18,7 +18,7 @@ function InputBox({
                 <div className='bg-black h-3/10 w-9/10 mx-auto rounded-lg flex flex-col relative justify-between'>
                     <label htmlFor={useInputId} className='text-green-400 font-bold absolute top-7 left-10'>{label}</label>
                     <input
-                        className='bg-white w-60 left-10 top-14 absolute rounded-md'
+                        className='bg-gray-900 w-60 left-10 top-14 absolute rounded-md text-white'
                         type="number"
                         id={useInputId}
                         value={amount}

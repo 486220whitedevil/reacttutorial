@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className='flex justify-center items-center h-screen bg-gray-900 '>
-      <div className='flex h-3/5 w-6/10 p-10 bg-white  rounded-lg relative flex-col text-center  font-bold '>
+      <div className='flex h-3/5 w-6/10 p-10 bg-gray-800 rounded-lg relative flex-col text-center  font-bold '>
       <h1 className='text-3xl mb-10 text-orange-700 shadow-2xl'>Currency Convertor</h1>
         <InputBox
           label="From"
