@@ -7,6 +7,9 @@ import Contact from './components/Home/Contact/Contact.jsx'
 import './index.css'
 import App from './App.jsx'
 import User from './components/User/User.jsx'
+import Github from './components/Github/Github.jsx'
+import { useGithubData } from './components/Github/Github.jsx'
+
 
 // const router = createBrowserRouter([
 //   {
@@ -39,6 +42,11 @@ const router = createBrowserRouter(
       <Route path='about' element={<About/> }/>
       <Route path='contact' element={<Contact/> }/>
       <Route path='user/:userid' element={<User/> }/>
+      <Route 
+      loader = {useGithubData} // this function load data on hover 
+      path='github' 
+      element={<Github/> }/>
+      
     </Route>
   )
 )

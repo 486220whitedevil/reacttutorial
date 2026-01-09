@@ -31,12 +31,19 @@ function Header() {
               </NavLink>
             </li>
             <li >
-
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
                   `cursor-pointer ${isActive ? "text-red-700" : "tex-gray-700"} hover:text-blue-400 hover:text-2xl`}>
                 Contact
+              </NavLink>
+            </li>
+            <li >
+              <NavLink
+                to="/github"
+                className={({ isActive }) =>
+                  `cursor-pointer ${isActive ? "text-red-700" : "tex-gray-700"} hover:text-blue-400 hover:text-2xl`}>
+                Github
               </NavLink>
             </li>
           </ul>
