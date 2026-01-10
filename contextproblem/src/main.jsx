@@ -7,7 +7,7 @@ import AuthProvider from "./context/AuthContext";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <AuthProvider>
     <div className="w-full h-screen bg-black">
-      <App />
+      <App/>
     </div>
   </AuthProvider>
 );
