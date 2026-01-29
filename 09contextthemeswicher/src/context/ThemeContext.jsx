@@ -5,16 +5,18 @@ const ThemeContext = createContext();
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState("light");
 
-  // dark theme
   const darkTheme = () => setTheme("dark");
-
-  // light theme
   const lightTheme = () => setTheme("light");
 
-  // HTML pe class lagana (REAL THEME CHANGE)
+  // REAL theme change
   useEffect(() => {
-    document.querySelector('html').classList.remove("light", "dark");
-    document.querySelector('html').classList.add(theme);
+    const root = document.documentElement; // <html>
+
+    if (theme === "dark") {
+      root.classList.add("dark");
+    } else {
+      root.classList.remove("dark");
+    }
   }, [theme]);
 
   return (
@@ -24,7 +26,5 @@ export const ThemeProvider = ({ children }) => {
   );
 };
 
-// custom hook (industry standard)
-export const useTheme = () => {
-  return useContext(ThemeContext);
-};
+// custom hook
+export const useTheme = () => useContext(ThemeContext);

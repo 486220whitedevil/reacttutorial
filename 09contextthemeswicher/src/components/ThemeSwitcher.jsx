@@ -11,14 +11,14 @@ function ThemeSwitcher() {
 
       <button
         onClick={darkTheme}
-        className="px-4 py-2 mr-3 bg-black text-white rounded hover:opacity-80"
+        className="px-4 py-2 mr-3 bg-black text-white rounded"
       >
         Dark
       </button>
 
       <button
         onClick={lightTheme}
-        className="px-4 py-2 bg-white text-black border rounded hover:bg-gray-100"
+        className="px-4 py-2 bg-white text-black border rounded"
       >
         Light
       </button>
